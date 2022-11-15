@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <style>
+
+  .container{
+   margin:auto auto ; 
+   background-image: url(pexels-anete-lusina-5240734.jpg);
+   height: 55%;
+    width: 39%;
+   position : absolute;
+   transition: 3s cubic-bezier(0.46, 0.33, 0.25, 1);
+    background-size: cover;
+    background-position: center center;
+    left: 30%;
+    top: 10%;
+  }
+
+  .container:hover{
+   animation-name: change-photo;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+   animation-duration: 6s;
+   position: absolute;
+   top: 10%; left : 30%;
+   background-position : center center ;
+   height: 55%;
+    width: 39%;
+    background-repeat: no-repeat;
+   background-size : cover;
+   }
+
+  @keyframes change-photo {
+   0% {
+    background-image : url(pexels-anete-lusina-5240734.jpg);
+   }
+
+   40%{
+    background-image : url(pexels-anna-shvets-5069429.jpg);
+   }
+
+   60%{
+    background-image : url(pexels-anna-shvets-5069432.jpg);
+   }
+
+   80%{
+    background-image : url(pexels-ksenia-chernaya-5766215.jpg);
+   }
+   100%{
+    background-image : url(pexels-maria-gloss-4197802.jpg);
+   }
+  }
+ </style>
+</head>
+<body>
+
+ <div class="container"></div>
+
+</body>
+</html>
