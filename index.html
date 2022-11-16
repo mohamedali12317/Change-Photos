@@ -35,30 +35,61 @@
    }
 
   @keyframes change-photo {
-   0% {
+   10% , 100% {
     background-image : url(pexels-anete-lusina-5240734.jpg);
    }
 
-   40%{
+   30%{
     background-image : url(pexels-anna-shvets-5069429.jpg);
    }
 
-   60%{
+   50%{
     background-image : url(pexels-anna-shvets-5069432.jpg);
    }
 
-   80%{
+   70%{
     background-image : url(pexels-ksenia-chernaya-5766215.jpg);
    }
-   100%{
+   90%{
     background-image : url(pexels-maria-gloss-4197802.jpg);
    }
   }
+
+  .container.two {
+    top: 100%; left : 30%;
+   transition: 3s linear;
+
+  }
+    .container.three {
+    top: 200%; left : 30%;
+   transition: 3s ease;
+
+  } 
+  .container.four {
+    top: 300%; left : 30%;
+   transition: 3s ease-in;
+
+  } 
+   .container.five {
+    top: 400%; left : 30%;
+   transition: 3s ease-in-out;
+
+  } 
+   .container.six {
+    top: 500%; left : 30%;
+   transition: 3s ease-out;
+
+  }
  </style>
 </head>
-<body>
+<body style="background-color:#242121f7;">
 
  <div class="container"></div>
+ <div class="container two"></div>
+ <div class="container three"></div>
+ <div class="container four"></div>
+ <div class="container five"></div>
+ <div class="container six"></div>
 
 </body>
 </html>
